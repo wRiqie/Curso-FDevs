@@ -1,0 +1,5 @@
+1- Criar Planilha Metas - Gerenciador;
+
+2- fazer 3 cidades na planilha de plano de metas, e usar macro para vasculhar arquivos e copiar campos;
+
+depois consolidar, ou seja colocar uma em baixo da outra;

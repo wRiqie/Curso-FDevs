@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Currículo</title>
+
+    <!--Fontes Google-->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,800,300,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:800,400|Roboto+Slab:400,400i,700,700i"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/site.css">
+
+    <!-- Fonte Awesome Icon -->
+    <link rel="stylesheet" href="fontes/fontawesome/css/all.css">
+</head>
+
+<body>
+        <!--<header id="header">
+            <strong>Marcação e Formatação</strong>
+        </header>-->
+
+        <header id="header">
+            <ul>
+                <li><a href="#Sobre" onclick="toggle()">Sobre</a></li>
+                <li><a href="#Sumario" onclick="toggle()">Sumário</a></li>
+                <li><a href="#endereco" onclick="toggle()">Endereço</a></li>
+                <li><a href="#experiencia" onclick="toggle()">Experiências</a></li>
+                <li><a href="#competencia" onclick="toggle()">Competências</a></li>
+                <li><a href="#formacao" onclick="toggle()">Formação Acadêmica</a></li>
+            </ul>
+            <div class="toggle" onclick="toggle()"></div>
+        </header>
+
+
+    <div class="content">
+        <div class="tit-centro">
+            <h1>Currículo</h1>
+        </div>
+
+        <div>
+            <div class="cabecalho">
+                <div id="Sobre">
+                    <h1>Benjamin Antonio Silva </h1>
+
+                    <p>Nascimento: 25/11/1981</p>
+                    <p>E-mail: <a href="mailto:benjamin@email.com">benjamin@email.com</a></p>
+                    <p>Telefone: (14) 99999-9999</p>
+                </div>
+                <div class="imagem">
+                    <img src="images/perfil.jpg" alt="Imagem de perfil">
+                </div>
+            </div>
+
+
+
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate reprehenderit fugiat,
+                    recusandae placeat quas et provident veniam impedit, commodi minus dignissimos, repellendus
+                    quaerat sint adipisci aut, debitis. Architecto
+                    minima, harum!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate reprehenderit fugiat,
+                    recusandae placeat quas et provident veniam impedit, commodi minus dignissimos, repellendus
+                    quaerat sint adipisci aut, debitis.
+                <div id="minhaDiv">
+                    quaerat sint adipisci aut, debitis. Architecto
+                    minima, harum!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate reprehenderit fugiat,
+                    recusandae placeat quas et provident veniam impedit, commodi minus dignissimos, repellendus
+                    quaerat sint adipisci aut, debitis.
+                </div>
+                </p>
+            </div>
+            <div class="button">
+                <button id="meuBotao" type="button" onclick="Mudarestado('minhaDiv')">Esconder</button>
+            </div>
+
+
+            <div id="Sumario" class="sumario">
+                <div class="tit-centro">
+                    <h3>Sumário <a href="#sumario"></a></h3>
+                </div>
+                <ul>
+                    <li><a href="#endereco">Endereço</a></li>
+                    <li><a href="#experiencia">Experiência</a></li>
+                    <li><a href="#competencia">Competências</a></li>
+                    <li><a href="#formacao">Formação Acadêmica</a></li>
+                </ul>
+            </div>
+
+            <div class="tit-centro">
+                <h3 id="endereco">Endereço <a href="#endereco"></a></h3>
+            </div>
+            <dl>
+                <dt>Rua</dt>
+                <dd>Rua General Osório, 720</dd>
+                <dt>Cidade</dt>
+                <dd>Barra Bonita, SP</dd>
+                <dt>Bairro</dt>
+                <dd>Cabral</dd>
+            </dl>
+            <p>
+            <div class="button">
+                <a href="#top"><button href="#topo">topo</button></a>
+            </div>
+            </p>
+
+
+            <div class="tit-centro">
+                <h3 id="experiencia">Experiência <a href="#experiencia"></a></h3>
+            </div>
+            <dl>
+                <dt><a href="#">DigitalX</a></dt>
+                <dd>Webdesign 2018 - Atual</dd>
+                <dt><a href="#">CompanySoft</a></dt>
+                <dd>Webdesign 2012 - 2018</dd>
+            </dl>
+            <p>
+            <div class="button">
+                <a href="#top"><button href="#topo">topo</button></a>
+            </div>
+        </div>
+        </p>
+
+        <div class="tit-centro">
+            <h3 id="competencia">Competências <a href="#competencia"></a></h3>
+        </div>
+        <div class="">
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>XML</li>
+            </ul>
+        </div>
+        <p>
+        <div class="button">
+            <a href="#top"><button href="#topo">topo</button></a>
+        </div>
+        </p>
+
+        <div class="tit-centro">
+            <h3 id="formacao">Formação Acadêmica <a href="#formacao"></a></h3>
+        </div>
+        <div>
+            <h4><a href="http://www.etecbarrabonita.com.br">ETEC Comendador João Rays</a></h4>
+            <p>Desenvolvimento de Sistemas</p>
+            <p>2020-Atual</p>
+            <h4><a href="http://www.etecbarrabonita.com.br">ETEC Comendador João Rays</a></h4>
+            <p>Informática para Internet</p>
+            <p>2014-2016</p>
+        </div>
+        <p>
+        <div class="button">
+            <div class="button">
+                <a href="#top"><button href="#topo">topo</button></a>
+            </div>
+        </div>
+        </p>
+
+    </div>
+    </div>
+    <footer>
+        <img src="images/logo.png" alt="">
+        <a>Currículo</a>
+    </footer>
+
+    <script src="js/site.js"></script>
+</body>
+
+</html>

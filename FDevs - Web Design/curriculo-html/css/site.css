@@ -1,0 +1,238 @@
+*{
+    font-family:Roboto, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.877);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
+}
+
+header.sticky {
+    padding: 30px 100px;
+    background: #000;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+header .logo {
+    position: relative;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul li {
+    padding-top: 10px;
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 0 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    transition: 0.6s;
+}
+
+header ul li a:hover {
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 3px solid white;
+}
+
+header.sticky .logo,
+header.sticky ul li a {
+    color: #fff;
+}
+
+@media (max-width: 992px) {
+    .toggle {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+    .toggle:before {
+        content: '';
+        position: absolute;
+        top: 4px;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        z-index: 1;
+        box-shadow: 0 10px 0 #000;
+        transition: 0.5s;
+    }
+    .toggle:after {
+        content: '';
+        position: absolute;
+        bottom: 4px;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        z-index: 1;
+        transition: 0.5s;
+    }
+    header.active .toggle:before {
+        top: 14px;
+        transform: rotate(45deg);
+        box-shadow: 0 0 0 #000;
+    }
+    header.active .toggle:after {
+        bottom: 14px;
+        transform: rotate(-45deg);
+    }
+    header.active .toggle:before {
+        top: 14px;
+        transform: rotate(45deg);
+        box-shadow: 0 0 0 #000;
+    }
+    header.active .toggle:after {
+        bottom: 14px;
+        transform: rotate(-45deg);
+    }
+    header ul {
+        position: absolute;
+        top: 59px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh);
+        padding: 50px 100px;
+        text-align: center;
+        overflow: auto;
+        visibility: hidden;
+        opacity: 0;
+        /*transform: translateY(-100%);*/
+    }
+    header.active ul {
+        display: block;
+        background: #000;
+        visibility: visible;
+        opacity: 1;
+        /*transform: translateY(0);*/
+    }
+    header.active ul li a {
+        margin: 15px 0;
+        font-size: 24px;
+    }
+    header,
+    header.sticky {
+        padding: 20px 50px;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+}
+
+
+body .content{
+    padding: 2px 20px;
+    background-color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    padding-top: 75px;
+}
+
+body .content .tit-centro{
+    display: flex;
+    justify-content: center;
+    padding: 75px;
+}
+
+body .content .cabecalho{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.button button{
+    background-color: rgb(37, 37, 255);
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    height: 35px;
+    outline: none;
+    border: 0;
+}
+
+.button button:hover{
+    background-color: rgb(1, 1, 160);
+}
+
+body .content .sumario ul{
+    color: rgb(9, 72, 247);
+    list-style: none;
+    padding: 0;
+}
+
+
+body .content .sumario ul li a{
+    text-decoration: none;
+    
+}
+
+dt{
+    font-weight: bold;
+}
+
+.imagem img{
+    border-radius: 15px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+
+
+    justify-content: space-between;
+
+    background-color: black;
+    height: 100px;
+
+}
+
+footer img{
+    margin-left: 25px;
+}
+
+footer a{
+    color: white;
+    padding-right: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}

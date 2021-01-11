@@ -1,0 +1,2 @@
+photoshop
+Mask - Ao criar uma máscara, quando ela é branca, revela a imagem, quando é preta, deixa transparente

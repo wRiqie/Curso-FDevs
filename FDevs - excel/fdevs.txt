@@ -1,0 +1,1 @@
+Criar macro que pegue informações de outras 3 tabelas cidades e coloque em uma consolidar
