@@ -1,0 +1,16 @@
+.botao{
+    padding: 5px 10px;
+    background: deepskyblue;
+    border: 2px solid deepskyblue;
+    color: white;
+    transition: 0.5s;
+    border-radius: 10px 10px 10px 0;
+    letter-spacing: 2px;
+}
+
+.botao:hover{
+    border: 2px solid deepskyblue;
+    color: deepskyblue;
+    background: none;
+    transition: 0.5s;
+}
