@@ -1,0 +1,26 @@
+<div class="wrapper">
+    <header>
+        <indicador-questao></indicador-questao>
+    </header>
+    <main>
+        <h2 class="questao-title">{{ titulo }}</h2>
+
+        <div class="alternativas">
+            <div class="alternativa" *ngFor="let alternativa of alternativas">
+                <span>{{ alternativa.titulo }}</span>
+                <input class="check" id="checkRadio" type="checkbox">
+                <label for="checkRadio"></label>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="buttons">
+            <div class="jump">
+                <button>Pular</button>
+            </div>
+            <div class="confirm">
+                <button>Confirmar</button>
+            </div>
+        </div>
+    </footer>
+</div>

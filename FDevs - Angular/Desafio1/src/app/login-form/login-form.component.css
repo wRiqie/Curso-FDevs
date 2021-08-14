@@ -3,28 +3,17 @@
     flex-direction: column;
 }
 
-.email{
-    width: 300px;
-    padding: 10px 0;
-    margin-top: 20px;
-    border: none;
-    border-bottom: 2px solid deepskyblue;
-    outline: none;
-}
-
-.senha{
-    padding: 10px 0;
-    margin-top: 20px;
-    border: none;
-    border-bottom: 2px solid deepskyblue;
-    outline: none;
-}
-
 .botao{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+  
+  .example-full-width {
+    width: 300px;
+    padding: 0px 0;
+    margin-top: 5px;
+  }
 
 .botao button{
     background-color: deepskyblue;
@@ -41,3 +30,11 @@
     color: deepskyblue;
     transition: 0.6s;
 }
+
+.loginInputs .mat-form-field-appearance-outline .mat-form-field-outline {
+    color: white;
+  }
+  /* Font color */
+  input.mat-input-element {
+    color: white;
+  }
